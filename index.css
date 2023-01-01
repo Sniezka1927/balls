@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+  /* font-family: "Open Sans", sans-serif; */
+}
+
+#wrapper {
+  width: 100vw;
+  height: 100vh;
+  /* display: flex; */
+  /* background-color: rgb(21, 19, 19); */
+  /* align-items: center; */
+  /* justify-content: center; */
+  position: relative;
+}
+
+#score {
+  position: absolute;
+  width: 150px;
+  height: 50px;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid blue;
+  color: blue;
+  font-size: 40px;
+}
+
+#next {
+  position: absolute;
+  width: 150px;
+  height: 50px;
+  left: 0;
+  top: 48px;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  border: 2px solid blue;
+}
+
+#content {
+  height: 400px;
+  width: 800px;
+  align-items: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#board {
+  border: 2px solid blue;
+  width: 400px;
+  height: 100%;
+  display: grid;
+}
+
+#losebg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba(0, 0, 0, 0.7); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+#loseprompt {
+  width: 350px;
+  height: 350px;
+  font-size: 40px;
+  border: 2px solid blue;
+  color: blue;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-flow: column;
+}
+
+#loseheader {
+  width: 150px;
+  height: 50px;
+  color: blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#losetext {
+  width: 150px;
+  height: 50px;
+  color: blue;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#losebt {
+  width: 270px;
+  height: 60px;
+  border: 2px solid blue;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tile {
+  width: 100%;
+  height: 100%;
+  border: 1px solid blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ball {
+  width: 80%;
+  height: 80%;
+  border-radius: 100%;
+  border: 1px solid black;
+}
